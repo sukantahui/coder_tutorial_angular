@@ -46,6 +46,7 @@ import {NgxMousetrapModule} from 'ngx-mousetrap';
 import {TooltipModule} from 'ng2-tooltip-directive';
 import { HighlightDirective } from './directives/highlight.directive';
 import { FooterComponent } from './pages/footer/footer.component';
+import { TutorialComponent } from './pages/tutorial/tutorial.component';
 
 
 
@@ -66,6 +67,7 @@ import { FooterComponent } from './pages/footer/footer.component';
     LoaidngRollerComponent,
     HighlightDirective,
     FooterComponent,
+    TutorialComponent,
   ],
   imports: [
     BrowserModule,
