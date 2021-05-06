@@ -45,6 +45,7 @@ import {LogLevel, NgxFancyLoggerModule} from 'ngx-fancy-logger';
 import {NgxMousetrapModule} from 'ngx-mousetrap';
 import {TooltipModule} from 'ng2-tooltip-directive';
 import { HighlightDirective } from './directives/highlight.directive';
+import { FooterComponent } from './pages/footer/footer.component';
 
 
 
@@ -64,6 +65,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     LoaidngHourglassComponent,
     LoaidngRollerComponent,
     HighlightDirective,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

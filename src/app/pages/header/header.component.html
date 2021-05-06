@@ -1,123 +1,42 @@
-<div class="navbar">
-  <!--For Public-->
-  <mat-toolbar color="secondary" [ngStyle]="myStyle()" *ngIf="!isAuthenticated">
-    <mat-nav-list class="list-horizontal">
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
 
-      <mat-list-item>
-        <button mat-button
-                [routerLink]="['/']"
-                routerLinkActive="MyActiveMenu"
-                [routerLinkActiveOptions]="{exact: true}">Home</button>
-      </mat-list-item>
+    <h1 class="logo me-auto"><a href="index.html">CODER</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
 
-      <mat-list-item>
-        <button mat-button mat-raised-button
-                [routerLink]="['/auth']"
-                routerLinkActive="MyActiveMenu">Login</button>
-        <button mat-button *ngIf="isAuthenticated" (click)="logout()">Logout</button>
-      </mat-list-item>
+        <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
 
+    <a href="courses.html" class="get-started-btn">Get Started</a>
 
-
-
-
-    </mat-nav-list>
-  </mat-toolbar>
-  <!--For Owner new-->
-  <mat-toolbar color="secondary" [ngStyle]="myStyle()" *ngIf="isAuthenticated && isOwner">
-    <mat-nav-list class="list-horizontal">
-
-      <mat-list-item>
-        <button mat-button
-                [routerLink]="['/']"
-                routerLinkActive="MyActiveMenu"
-                [routerLinkActiveOptions]="{exact: true}">Home</button>
-      </mat-list-item>
-
-      <mat-list-item>
-        <button mat-menu-item [matMenuTriggerFor]="menuLedger">Master</button>
-      </mat-list-item>
-      <mat-menu #menuLedger="matMenu" [overlapTrigger]="false">
-        <button mat-menu-item [routerLink]="['/customer']" routerLinkActive="MyActiveMenu"><fa-icon class="delete" [icon]="faUserEdit"></fa-icon>&nbsp;Customer</button>
-        <button mat-menu-item [routerLink]="['/vendor']" routerLinkActive="MyActiveMenu"><fa-icon class="delete" [icon]="faUserAlt"></fa-icon>&nbsp;Vendor</button>
-        <button mat-menu-item [routerLink]="['/products']" routerLinkActive="MyActiveMenu"><mat-icon>send</mat-icon>Products</button>
-      </mat-menu>
-
-
-      <mat-list-item>
-        <button mat-menu-item [matMenuTriggerFor]="menuTransaction">Transactions</button>
-      </mat-list-item>
-      <mat-menu #menuTransaction="matMenu" [overlapTrigger]="false">
-        <button mat-menu-item [routerLink]="['/purchase']" routerLinkActive="MyActiveMenu">Purchase</button>
-        <button mat-menu-item [routerLink]="['/sale']" routerLinkActive="MyActiveMenu">Sale</button>
-        <button mat-menu-item [routerLink]="['/saleMaster']" routerLinkActive="MyActiveMenu">Sale Master</button>
-      </mat-menu>
-
-
-      <mat-list-item>
-        <button mat-button mat-raised-button *ngIf="!isAuthenticated"
-                [routerLink]="['/auth']"
-                routerLinkActive="MyActiveMenu">Login</button>
-        <button mat-button *ngIf="isAuthenticated" (click)="logout()">Logout</button>
-      </mat-list-item>
-
-
-
-
-
-    </mat-nav-list>
-  </mat-toolbar>
-
-  <!--For Manager-->
-  <mat-toolbar color="accent" *ngIf="isAuthenticated && isWorker">
-    <mat-toolbar-row fxLayoutAlign="space-between center">
-      <div fxLayout="row">
-          <button mat-button >
-            <mat-icon>home</mat-icon>
-            <span class="logo">Coder</span>
-          </button>
-          <div *ngIf="!deviceXs">
-            <button mat-button
-                    [routerLink]="['/']"
-                    routerLinkActive="MyActiveMenu"
-                    [routerLinkActiveOptions]="{exact: true}">Home</button>
-            <button mat-button >Contact Us</button>
-            <button mat-button >About Us</button>
-          </div>
-          <div ngbDropdown class="d-inline-block">
-            <button class="btn btn-outline-primary" id="dropdownBasic3" ngbDropdownToggle>Toggle dropdown</button>
-            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-              <button ngbDropdownItem>Action - 1</button>
-              <button ngbDropdownItem>Another Action</button>
-              <button ngbDropdownItem>Something else is here</button>
-            </div>
-          </div>
-
-          <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item [routerLink]="['/customer']" routerLinkActive="MyActiveMenu">Customer</button>
-            <button mat-menu-item [routerLink]="['/product']" routerLinkActive="MyActiveMenu">Product</button>
-          </mat-menu>
-
-
-      </div>
-      <button mat-button
-              [routerLink]="['/auth']"
-              routerLinkActive="MyActiveMenu">Login</button>
-      <button mat-button *ngIf="isAuthenticated" (click)="logout()">Logout</button>
-      <div>
-          <button  mat-button>
-            <mat-icon *ngIf="deviceXs">more_vert</mat-icon>
-            <span *ngIf="!deviceXs">Menu</span>
-          </button>
-      </div>
-    </mat-toolbar-row>
-
-    <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
-      <button mat-button >Home</button>
-      <button mat-button >Contact Us</button>
-      <button mat-button >About Us</button>
-    </mat-toolbar-row>
-  </mat-toolbar>
-</div>
+  </div>
+</header>
