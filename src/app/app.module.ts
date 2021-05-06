@@ -47,6 +47,10 @@ import {TooltipModule} from 'ng2-tooltip-directive';
 import { HighlightDirective } from './directives/highlight.directive';
 import { FooterComponent } from './pages/footer/footer.component';
 import { TutorialComponent } from './pages/tutorial/tutorial.component';
+import { JavaComponent } from './pages/tutorial/java/java.component';
+import { JavaHomeComponent } from './pages/tutorial/java/java-home/java-home.component';
+import { JavThreadComponent } from './pages/tutorial/java/jav-thread/jav-thread.component';
+
 
 
 
@@ -68,6 +72,9 @@ import { TutorialComponent } from './pages/tutorial/tutorial.component';
     HighlightDirective,
     FooterComponent,
     TutorialComponent,
+    JavaComponent,
+    JavaHomeComponent,
+    JavThreadComponent,
   ],
   imports: [
     BrowserModule,

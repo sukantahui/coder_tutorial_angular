@@ -8,15 +8,15 @@
   </div><!-- End Breadcrumbs -->
 
   <div class="d-flex flex-row bd-highlight mb-3">
-    <div class="col-1 p-2 bd-highlight">
+    <div class="col-2 p-2 bd-highlight">
       <ul>
         <li>
-          <a [routerLink]="['/java']" class="get-started-btn">Java</a>
+          <a [routerLink]="['java-thread']" class="get-started-btn">Java Thread</a>
         </li>
       </ul>
     </div>
-    <div class="col-11 p-2 bd-highlight">
-      Select your topic
+    <div class="col-10 p-2 bd-highlight">
+      <router-outlet></router-outlet>
     </div>
   </div>
 

@@ -1,0 +1,189 @@
+<main id="main">
+
+      <!-- Batch Processing -->
+      <section>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Batch processing</h5>
+            <p class="card-text">Batch processing is a technique in which an Operating System collects the programs and
+              data together in a batch before processing starts. An operating system does the following activities
+              related to batch processing −</p>
+            <ul>
+              <li>The OS defines a job which has predefined sequence of commands, programs and data as a single unit. </li>
+              <li>The OS keeps a number a jobs in memory and executes them without any manual information.</li>
+              <li>Jobs are processed in the order of submission, i.e., first come first served fashion.</li>
+              <li>When a job completes its execution, its memory is released and the output for the job gets copied into     an output spool for later printing or processing.</li>
+            </ul>
+            <img src="images/batch-operating-system.jpg">
+            <hr>
+            <h5 class="card-title">Advantages</h5>
+            <ul>
+              <li>Batch processing takes much of the work of the operator to the computer.</li>
+              <li>Increased performance as a new job get started as soon as the previous job is finished, without any
+                manual intervention.</li>
+            </ul>
+            <hr>
+            <h5 class="card-title">Disadvantages</h5>
+            <ul>
+              <li>Difficult to debug program.</li>
+              <li>A job could enter an infinite loop.</li>
+              <li>Due to lack of protection scheme, one batch job can affect pending jobs.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End of Batch Processing -->
+      <!-- Multitasking -->
+      <section>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Multitasking</h5>
+            <p class="card-text">Multitasking is when multiple jobs are executed by the CPU simultaneously by switching between them.
+              Switches occur so frequently that the users may interact with each program while it is running.
+              An OS does the following activities related to multitasking −
+            </p>
+
+            <ul>
+              <li>The user gives instructions to the operating system or to a program directly, and receives an immediate response. </li>
+              <li>The OS handles multitasking in the way that it can handle multiple operations/executes multiple programs at a time.</li>
+              <li>Multitasking Operating Systems are also known as Time-sharing systems.</li>
+              <li>These Operating Systems were developed to provide interactive use of a computer system at a reasonable cost.</li>
+              <li>A time-shared operating system uses the concept of CPU scheduling and multiprogramming to provide each user with a small portion of a time-shared CPU.</li>
+              <li>Each user has at least one separate program in memory.</li>
+              <li>A program that is loaded into memory and is executing is commonly referred to as a process.</li>
+              <li>When a process executes, it typically executes for only a very short time before it either finishes or needs to perform I/O.</li>
+              <li>Since interactive I/O typically runs at slower speeds, it may take a long time to complete. During this time, a CPU can be utilized by another process.</li>
+              <li>The operating system allows the users to share the computer simultaneously. Since each action or command in a time-shared system tends to be short, only a little CPU time is needed for each user.</li>
+              <li>As the system switches CPU rapidly from one user/program to the next, each user is given the impression that he/she has his/her own CPU, whereas actually one CPU is being shared among many users.</li>
+            </ul>
+
+            <img src="images/muti-tasking.svg">
+            <hr>
+            <h5 class="card-title">We Can achive Multitasking in following way</h5>
+
+            <ol>
+              <li>Processed base multitasking(Multi Process)</li>
+              <li>Thread based multitasking(Multi Threading)</li>
+            </ol>
+
+            <hr>
+            <h5 class="card-title">Process-based Multitasking (Multiprocessing)</h5>
+
+            <ol>
+              <li>Each process has an address in memory. In other words, each process allocates a separate memory area.</li>
+              <li>A process is heavyweight.</li>
+              <li>Cost of communication between the process is high.</li>
+              <li>Switching from one process to another requires some time for saving and loading registers, memory maps, updating lists, etc.</li>
+            </ol>
+
+
+            <h5 class="card-title">Thread-based Multitasking (Multithreading))</h5>
+            <ol>
+              <li>Threads share the same address space.</li>
+              <li>A thread is lightweight.</li>
+              <li>Cost of communication between the thread is low.</li>
+            </ol>
+
+          </div>
+        </div>
+      </section>
+      <!-- end of Multitasking -->
+      <!-- multi processing -->
+      <section>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Multi Processing</h5>
+            <p class="card-text">Multiprocessing refers to using multiple CPUs/processors in a single system. Multiple CPUs can act in a parallel fashion and executes multiple processes together. They increase computing power to a great extent. Symmetric multiprocessing and asymmetric multiprocessing are two types of multiprocessing.</p>
+            <img src="images/muti-processing.svg">
+            <hr>
+            <h5>Difference Between Symmetric and Asymmetric Multiprocessing</h5>
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="col-6 p-2 bd-highlight">
+                <p>
+                  There are two types of multiprocessing, Symmetric Multiprocessing and Asymmetric Multiprocessing. Multiprocessing system has more than one processor and they can execute multiple process simultaneously. In Symmetric Multiprocessing, processors shares the same memory. In Asymmetric Multiprocessing there is a one master processor that controls the data structure of the system.
+                  The primary difference between Symmetric and Asymmetric Multiprocessing is that in Symmetric Multiprocessing all the processor in the system run tasks in OS. But, in Asymmetric Multiprocessing only the master processor run task in OS.
+                </p>
+              </div>
+              <div class="col-6 p-2 bd-highlight">
+                <img src="images/Symmetric-Multiprocessing-Vs-Asymmetric-Multiprocessing.jpg">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- end of multi processing -->
+
+      <!-- multi Threading -->
+      <section>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Multi Threading</h5>
+            <p class="card-text">Multithreading refers to multiple threads being executed by a single CPU in such a way that each thread is executed in parallel fashion and CPU/processor is switched between them using context switch. Multithreading is a technique to increase the throughput of a processor. Multithreading in Java is a process of executing multiple threads simultaneously.
+              A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.
+              However, we use multithreading than multiprocessing because threads use a shared memory area. They don't allocate separate memory area so saves memory, and context-switching between the threads takes less time than process.
+              Java Multithreading is mostly used in games, animation, etc.</p>
+            <p>
+            </p>
+            <img src="images/muti-threading.svg">
+            <hr>
+            <h5 class="card-title">Advantages of Java Multithreading</h5>
+
+            <ol>
+              <li>It doesn't block the user because threads are independent and you can perform multiple operations at the same time.</li>
+              <li>You can perform many operations together, so it saves time.</li>
+              <li>Threads are independent, so it doesn't affect other threads if an exception occurs in a single thread.</li>
+              </ol>
+
+          </div>
+        </div>
+      </section>
+      <!-- end of multi Threading -->
+      <!-- difference between multi threading and multi processing -->
+      <section>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Important differences between Multiprocessing and Multithreading</h5>
+            <table class="table table-bordered">
+              <thead>
+              <tr>
+                <th>SL</th>
+                <th>Key</th>
+                <th>Multiprocessing</th>
+                <th>Multithreading</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>Concept</td>
+                <td>Multiple processors/CPUs are added to the system to increase the computing power of the system.</td>
+                <td>Multiple threads are created of a process to be executed in a parallel fashion to increase the throughput of the system.</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Parallel Action</td>
+                <td>Multiple processes are executed in a parallel fashion.</td>
+                <td>Multiple threads are executed in a parallel fashion.</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Categories</td>
+                <td>Multiprocessing can be classified into symmetric and asymmetric multiprocessing.</td>
+                <td>No such classification present for multithreading.</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Time</td>
+                <td>Process creation is time consuming.</td>
+                <td>Thread creation is easy and is time savvy.</td>
+              </tr>
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- end of difference between multi threading and multi processing -->
+</main><!-- End #main -->
