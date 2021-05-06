@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 110.61 38.13" style="enable-background:new 0 0 110.61 38.13;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill:#E6E7E8;stroke:#A3AFCF;stroke-width:0.25;stroke-miterlimit:10;}
+	.st1{opacity:0.44;fill:#1C75BC;stroke:#A3AFCF;stroke-width:0.1;stroke-miterlimit:10;}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:1.65px;}
+	.st4{opacity:0.42;fill:#F9ED32;}
+	.st5{font-family:'NirmalaUI';}
+	.st6{font-size:0.9256px;}
+	.st7{fill:#8DC63F;stroke:#A3AFCF;stroke-width:0.1;stroke-miterlimit:10;}
+	.st8{opacity:0.5;fill:#EF4136;stroke:#A3AFCF;stroke-width:0.1;stroke-miterlimit:10;}
+	.st9{fill:#FFF200;stroke:#A3AFCF;stroke-width:0.1;stroke-miterlimit:10;}
+	.st10{opacity:0.51;fill:#00A651;}
+	.st11{fill:#1C75BC;}
+	.st12{opacity:0.22;fill:#A7A9AC;}
+	.st13{font-size:4.478px;}
+</style>
+<rect x="0.58" y="0.48" class="st0" width="109.55" height="36.87"/>
+<g>
+	<path class="st1" d="M8.6,11.85v4.97h0.5l-1.05,2.8l-1.04-2.8h0.5v-4.96c-2.1-0.12-3.72-0.95-3.72-1.96c0-1.09,1.91-1.97,4.26-1.97
+		c2.36,0,4.27,0.88,4.27,1.97C12.32,10.89,10.7,11.72,8.6,11.85z"/>
+	<text transform="matrix(1.0514 0 0 1 6.2134 10.2979)" class="st2 st3">Excel</text>
+	<text transform="matrix(1.0514 0 0 1 16.3785 22.2188)" class="st2 st3">Operating System</text>
+	<path class="st4" d="M41.13,23.09H4.56c-0.8,0-1.45-0.65-1.45-1.45v0c0-0.8,0.65-1.45,1.45-1.45h36.57c0.8,0,1.45,0.65,1.45,1.45v0
+		C42.58,22.44,41.93,23.09,41.13,23.09z"/>
+	<text transform="matrix(-1.608123e-16 -1.1447 1 -1.840840e-16 8.2935 17.8292)" class="st5 st6">Process</text>
+	<path class="st7" d="M17.97,11.85v4.97h0.5l-1.05,2.8l-1.04-2.8h0.5v-4.96c-2.1-0.12-3.72-0.95-3.72-1.96
+		c0-1.09,1.91-1.97,4.26-1.97c2.36,0,4.27,0.88,4.27,1.97C21.68,10.89,20.07,11.72,17.97,11.85z"/>
+	<text transform="matrix(1.0514 0 0 1 16.0572 10.2979)" class="st2 st3">VLC</text>
+	<text transform="matrix(-1.608123e-16 -1.1447 1 -1.840840e-16 17.7193 17.7315)" class="st5 st6">Process</text>
+	<path class="st8" d="M28.09,11.85v4.97h0.5l-1.05,2.8l-1.04-2.8H27v-4.96c-2.1-0.12-3.72-0.95-3.72-1.96
+		c0-1.09,1.91-1.97,4.26-1.97c2.36,0,4.27,0.88,4.27,1.97C31.81,10.89,30.19,11.72,28.09,11.85z"/>
+	<text transform="matrix(1.0514 0 0 1 25.1656 10.2979)" class="st2 st3">WORD</text>
+	<text transform="matrix(-1.608123e-16 -1.1447 1 -1.840840e-16 27.7837 17.8292)" class="st5 st6">Process</text>
+	<path class="st9" d="M37.64,11.85v4.97h0.5l-1.05,2.8l-1.04-2.8h0.5v-4.96c-2.1-0.12-3.72-0.95-3.72-1.96
+		c0-1.09,1.91-1.97,4.26-1.97c2.36,0,4.27,0.88,4.27,1.97C41.36,10.89,39.74,11.72,37.64,11.85z"/>
+	<text transform="matrix(1.0514 0 0 1 34.6753 10.2979)" class="st2 st3">Firefox</text>
+	<text transform="matrix(-1.608123e-16 -1.1447 1 -1.840840e-16 37.3365 17.8292)" class="st5 st6">Process</text>
+	<path class="st10" d="M32.16,31.85H13.53c-0.94,0-1.71-0.76-1.71-1.71v-2.06c0-0.94,0.76-1.71,1.71-1.71h18.62
+		c0.94,0,1.71,0.76,1.71,1.71v2.06C33.86,31.09,33.1,31.85,32.16,31.85z"/>
+	<polygon class="st11" points="23.73,25.73 22.84,26.29 21.96,25.73 22.39,25.73 22.39,23.18 23.3,23.18 23.3,25.73 	"/>
+	<text transform="matrix(1.0514 0 0 1 21.0093 29.5518)" class="st2 st3">CPU</text>
+</g>
+<text transform="matrix(1.3634 0 0 1 5.9163 5.7318)" class="st12 st2 st13">Multi Tasking</text>
+</svg>
