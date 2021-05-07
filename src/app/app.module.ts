@@ -50,13 +50,11 @@ import { TutorialComponent } from './pages/tutorial/tutorial.component';
 import { JavaComponent } from './pages/tutorial/java/java.component';
 import { JavaHomeComponent } from './pages/tutorial/java/java-home/java-home.component';
 import { JavThreadComponent } from './pages/tutorial/java/jav-thread/jav-thread.component';
-<<<<<<< HEAD
 import { StudentComponent } from './pages/student/student.component';
-=======
 import { PythonComponent } from './pages/tutorial/python/python.component';
 import { PythonHomeComponent } from './pages/tutorial/python/python-home/python-home.component';
 import { PythonOverviewComponent } from './pages/tutorial/python/python-overview/python-overview.component';
->>>>>>> 06fe390389d119a73601f58203db42a813d71b97
+
 
 
 
@@ -82,13 +80,10 @@ import { PythonOverviewComponent } from './pages/tutorial/python/python-overview
     JavaComponent,
     JavaHomeComponent,
     JavThreadComponent,
-<<<<<<< HEAD
     StudentComponent,
-=======
     PythonComponent,
     PythonHomeComponent,
     PythonOverviewComponent,
->>>>>>> 06fe390389d119a73601f58203db42a813d71b97
   ],
   imports: [
     BrowserModule,
