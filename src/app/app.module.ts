@@ -50,6 +50,7 @@ import { TutorialComponent } from './pages/tutorial/tutorial.component';
 import { JavaComponent } from './pages/tutorial/java/java.component';
 import { JavaHomeComponent } from './pages/tutorial/java/java-home/java-home.component';
 import { JavThreadComponent } from './pages/tutorial/java/jav-thread/jav-thread.component';
+import { StudentComponent } from './pages/student/student.component';
 
 
 
@@ -75,6 +76,7 @@ import { JavThreadComponent } from './pages/tutorial/java/jav-thread/jav-thread.
     JavaComponent,
     JavaHomeComponent,
     JavThreadComponent,
+    StudentComponent,
   ],
   imports: [
     BrowserModule,
