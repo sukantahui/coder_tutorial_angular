@@ -8,6 +8,7 @@ import {JavThreadComponent} from './pages/tutorial/java/jav-thread/jav-thread.co
 import {PythonComponent} from './pages/tutorial/python/python.component';
 import {PythonHomeComponent} from './pages/tutorial/python/python-home/python-home.component';
 import {PythonOverviewComponent} from './pages/tutorial/python/python-overview/python-overview.component';
+import {PythonSoftwareRequiredComponent} from './pages/tutorial/python/python-software-required/python-software-required.component';
 
 
 
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'python', component: PythonComponent,
     children: [
       {path: '', component: PythonHomeComponent, pathMatch: 'full'},
-      {path: 'python-overview', component: PythonOverviewComponent}
+      {path: 'python-overview', component: PythonOverviewComponent},
+      {path: 'python-software', component: PythonSoftwareRequiredComponent},
     ]},
 ];
 

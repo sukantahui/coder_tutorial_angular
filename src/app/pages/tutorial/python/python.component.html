@@ -9,17 +9,15 @@
 
   <div class="d-flex flex-row bd-highlight mb-3">
     <div class="col-2 p-2 bd-highlight">
-      <ul>
-        <li>
-          <a [routerLink]="['python-overview']" class="">Python Overview</a>
-        </li>
-      </ul>
+      <ol>
+        <li><a [routerLink]="['python-overview']" class="">Python Overview</a></li>
+        <li><a [routerLink]="['python-software']" class="">Required Software</a></li>
+      </ol>
     </div>
     <div class="col-10 p-2 bd-highlight">
       <router-outlet></router-outlet>
     </div>
   </div>
-
 </main>
 <!-- End #main -->
 

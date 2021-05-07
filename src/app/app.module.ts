@@ -54,6 +54,8 @@ import { StudentComponent } from './pages/student/student.component';
 import { PythonComponent } from './pages/tutorial/python/python.component';
 import { PythonHomeComponent } from './pages/tutorial/python/python-home/python-home.component';
 import { PythonOverviewComponent } from './pages/tutorial/python/python-overview/python-overview.component';
+import { PythonSoftwareRequiredComponent } from './pages/tutorial/python/python-software-required/python-software-required.component';
+
 
 
 
@@ -84,6 +86,7 @@ import { PythonOverviewComponent } from './pages/tutorial/python/python-overview
     PythonComponent,
     PythonHomeComponent,
     PythonOverviewComponent,
+    PythonSoftwareRequiredComponent,
   ],
   imports: [
     BrowserModule,
