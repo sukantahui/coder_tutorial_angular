@@ -82,13 +82,7 @@ import { PythonOverviewComponent } from './pages/tutorial/python/python-overview
     JavaComponent,
     JavaHomeComponent,
     JavThreadComponent,
-<<<<<<< HEAD
     StudentComponent,
-=======
-    PythonComponent,
-    PythonHomeComponent,
-    PythonOverviewComponent,
->>>>>>> 06fe390389d119a73601f58203db42a813d71b97
   ],
   imports: [
     BrowserModule,
