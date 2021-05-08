@@ -57,9 +57,9 @@ import { PythonOverviewComponent } from './pages/tutorial/python/python-overview
 import { PythonSoftwareRequiredComponent } from './pages/tutorial/python/python-software-required/python-software-required.component';
 import { PythonBasicComponent } from './pages/tutorial/python/python-basic/python-basic.component';
 import { PropositionalLogicComponent } from './pages/tutorial/propositional-logic/propositional-logic.component';
-import { ProposionalLogicHomeComponent } from './pages/tutorial/propositional-logic/proposional-logic-home/proposional-logic-home.component';
 import { BiIconComponent } from './pages/bi-icon/bi-icon.component';
 import { JavaCreateThreadComponent } from './pages/tutorial/java/jav-thread/java-create-thread/java-create-thread.component';
+import {ProposionalLogicHomeComponent} from './pages/tutorial/propositional-logic/proposional-logic-home/proposional-logic-home.component';
 
 
 
