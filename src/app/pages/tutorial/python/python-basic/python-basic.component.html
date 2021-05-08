@@ -1,1 +1,157 @@
-<p>python-basic works!</p>
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+    <section >
+      <div class="row">
+        <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+          <img src="assets/img/python/python-overview.jpg" class="img-fluid rounded-border" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <h3>Python Identifiers</h3>
+          <p class="fst-italic">
+            A Python identifier is a name used to identify a variable, function, class, module or other object. An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores and digits (0 to 9).
+
+            Python does not allow punctuation characters such as @, $, and % within identifiers. Python is a case sensitive programming language. Thus, <strong>CoffeeCup</strong> and <strong>coffecup</strong> are two different identifiers in Python.
+          </p>
+          <ul>
+            Here are naming conventions for Python identifiers −
+            <li><i class="bi bi-check-circle"></i>Class names start with an uppercase letter. All other identifiers start with a lowercase letter.</li>
+            <li><i class="bi bi-check-circle"></i>Starting an identifier with a single leading underscore indicates that the identifier is private.</li>
+            <li><i class="bi bi-check-circle"></i>Starting an identifier with two leading underscores indicates a strongly private identifier.</li>
+            <li><i class="bi bi-check-circle"></i>If the identifier also ends with two trailing underscores, the identifier is a language-defined special name.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+          <img src="assets/img/python/python-overview.jpg" class="img-fluid rounded-border" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <h3>Reserved Words</h3>
+          <p class="fst-italic" style="text-align:justify;">
+            The following list shows the Python keywords. These are reserved words and you cannot use them as constant or variable or any other identifier names. All the Python keywords contain lowercase letters only.
+          </p>
+          <table class="table table-bordered" style="text-align:center;">
+            <tr>
+              <td>and</td>
+              <td>exec</td>
+              <td>not</td>
+            </tr>
+            <tr>
+              <td>assert</td>
+              <td>finally</td>
+              <td>or</td>
+            </tr>
+            <tr>
+              <td>break</td>
+              <td>for</td>
+              <td>pass</td>
+            </tr>
+            <tr>
+              <td>class</td>
+              <td>from</td>
+              <td>print</td>
+            </tr>
+            <tr>
+              <td>continue</td>
+              <td>global</td>
+              <td>raise</td>
+            </tr>
+            <tr>
+              <td>def</td>
+              <td>if</td>
+              <td>return</td>
+            </tr>
+            <tr>
+              <td>del</td>
+              <td>import</td>
+              <td>try</td>
+            </tr>
+            <tr>
+              <td>elif</td>
+              <td>in</td>
+              <td>while</td>
+            </tr>
+            <tr>
+              <td>else</td>
+              <td>is</td>
+              <td>with </td>
+            </tr>
+            <tr>
+              <td>except</td>
+              <td>lambda</td>
+              <td>yield</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <section >
+      <div class="row">
+        <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+<!--          <img src="assets/img/python/python-overview.jpg" class="img-fluid rounded-border" alt="">-->
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <h3>Python Indentation</h3>
+          <p class="fst-italic">
+            Most of the programming languages like C, C++, and Java use braces &#123; &#125; to define a block of code. Python, however, uses indentation.
+          </p>
+          <p>
+            A code block (body of a function, loop, etc.) starts with indentation and ends with the first unindented line. The amount of indentation is up to you, but it must be consistent throughout that block.
+          </p>
+          <pre>
+              for i in range(1,11):
+                print(i)
+                if i == 5:
+                break
+          </pre>
+          <p>
+            The enforcement of indentation in Python makes the code look neat and clean. This results in Python programs that look similar and consistent.
+          </p>
+          <p>
+            Indentation can be ignored in line continuation, but it's always a good idea to indent. It makes the code more readable. For example:
+          </p>
+          <pre>
+              if True:
+                print('Python is fun')
+                a = 5
+          </pre>
+          <hr>
+          <pre>
+              if True: print('Python is fun'); a = 5
+          </pre>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <section >
+      <div class="row">
+        <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+<!--          <img src="assets/img/python/python-overview.jpg" class="img-fluid rounded-border" alt="">-->
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <h3>Quotation in Python</h3>
+          <p>
+            Python accepts single ('), double (") and triple (''' or """) quotes to denote string literals, as long as the same type of quote starts and ends the string.
+            The triple quotes are used to span the string across multiple lines. For example, all the following are legal −
+          </p>
+          <pre>
+              word = 'word'
+              sentence = "This is a sentence."
+              paragraph = """This is a paragraph. It is
+              made up of multiple lines and sentences."""
+          </pre>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<!-- End About Section -->
