@@ -8,6 +8,11 @@ import {JavThreadComponent} from './pages/tutorial/java/jav-thread/jav-thread.co
 import {PythonComponent} from './pages/tutorial/python/python.component';
 import {PythonHomeComponent} from './pages/tutorial/python/python-home/python-home.component';
 import {PythonOverviewComponent} from './pages/tutorial/python/python-overview/python-overview.component';
+import {PythonSoftwareRequiredComponent} from './pages/tutorial/python/python-software-required/python-software-required.component';
+import {PythonBasicComponent} from './pages/tutorial/python/python-basic/python-basic.component';
+import {PropositionalLogicComponent} from './pages/tutorial/propositional-logic/propositional-logic.component';
+import {ProposionalLogicHomeComponent} from './pages/tutorial/propositional-logic/proposional-logic-home/proposional-logic-home.component';
+import {BiIconComponent} from './pages/bi-icon/bi-icon.component';
 
 
 
@@ -15,6 +20,7 @@ import {PythonOverviewComponent} from './pages/tutorial/python/python-overview/p
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'tutorial', component: TutorialComponent},
+  {path: 'bi-sign', component: BiIconComponent},
   {path: 'java', component: JavaComponent,
     children: [
       {path: '', component: JavaHomeComponent, pathMatch: 'full'},
@@ -24,8 +30,15 @@ const routes: Routes = [
   {path: 'python', component: PythonComponent,
     children: [
       {path: '', component: PythonHomeComponent, pathMatch: 'full'},
-      {path: 'python-overview', component: PythonOverviewComponent}
+      {path: 'python-overview', component: PythonOverviewComponent},
+      {path: 'python-software', component: PythonSoftwareRequiredComponent},
+      {path: 'python-basic', component: PythonBasicComponent},
     ]},
+  {path: 'propositional-logic', component: PropositionalLogicComponent,
+    children: [
+      {path: '', component: ProposionalLogicHomeComponent, pathMatch: 'full'}
+    ]
+  },
 ];
 
 @NgModule({
