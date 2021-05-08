@@ -56,6 +56,10 @@ import { PythonHomeComponent } from './pages/tutorial/python/python-home/python-
 import { PythonOverviewComponent } from './pages/tutorial/python/python-overview/python-overview.component';
 import { PythonSoftwareRequiredComponent } from './pages/tutorial/python/python-software-required/python-software-required.component';
 import { PythonBasicComponent } from './pages/tutorial/python/python-basic/python-basic.component';
+import { PropositionalLogicComponent } from './pages/tutorial/propositional-logic/propositional-logic.component';
+import { ProposionalLogicHomeComponent } from './pages/tutorial/propositional-logic/proposional-logic-home/proposional-logic-home.component';
+import { BiIconComponent } from './pages/bi-icon/bi-icon.component';
+
 
 
 
@@ -89,6 +93,9 @@ import { PythonBasicComponent } from './pages/tutorial/python/python-basic/pytho
     PythonOverviewComponent,
     PythonSoftwareRequiredComponent,
     PythonBasicComponent,
+    PropositionalLogicComponent,
+    ProposionalLogicHomeComponent,
+    BiIconComponent
   ],
   imports: [
     BrowserModule,

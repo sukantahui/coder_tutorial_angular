@@ -1,0 +1,23 @@
+<main id="main">
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs" data-aos="fade-in">
+    <div class="container">
+      <h2>Propositional Logic</h2>
+      <p>The rules of mathematical logic specify methods of reasoning mathematical statements. Greek philosopher, Aristotle, was the pioneer of logical reasoning. Logical reasoning provides the theoretical base for many areas of mathematics and consequently computer science.</p>
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+  <div class="d-flex flex-row bd-highlight mb-3">
+    <div class="col-2 p-2 bd-highlight">
+      <ol>
+        <li><a [routerLink]="['python-overview']" class="">Python Overview</a></li>
+        <li><a [routerLink]="['python-software']" class="">Required Software</a></li>
+        <li><a [routerLink]="['python-basic']" class="">Python Basic</a></li>
+      </ol>
+    </div>
+    <div class="col-10 p-2 bd-highlight">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</main>
+<!-- End #main -->

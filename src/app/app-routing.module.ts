@@ -10,6 +10,9 @@ import {PythonHomeComponent} from './pages/tutorial/python/python-home/python-ho
 import {PythonOverviewComponent} from './pages/tutorial/python/python-overview/python-overview.component';
 import {PythonSoftwareRequiredComponent} from './pages/tutorial/python/python-software-required/python-software-required.component';
 import {PythonBasicComponent} from './pages/tutorial/python/python-basic/python-basic.component';
+import {PropositionalLogicComponent} from './pages/tutorial/propositional-logic/propositional-logic.component';
+import {ProposionalLogicHomeComponent} from './pages/tutorial/propositional-logic/proposional-logic-home/proposional-logic-home.component';
+import {BiIconComponent} from './pages/bi-icon/bi-icon.component';
 
 
 
@@ -17,6 +20,7 @@ import {PythonBasicComponent} from './pages/tutorial/python/python-basic/python-
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'tutorial', component: TutorialComponent},
+  {path: 'bi-sign', component: BiIconComponent},
   {path: 'java', component: JavaComponent,
     children: [
       {path: '', component: JavaHomeComponent, pathMatch: 'full'},
@@ -30,6 +34,11 @@ const routes: Routes = [
       {path: 'python-software', component: PythonSoftwareRequiredComponent},
       {path: 'python-basic', component: PythonBasicComponent},
     ]},
+  {path: 'propositional-logic', component: PropositionalLogicComponent,
+    children: [
+      {path: '', component: ProposionalLogicHomeComponent, pathMatch: 'full'}
+    ]
+  },
 ];
 
 @NgModule({
