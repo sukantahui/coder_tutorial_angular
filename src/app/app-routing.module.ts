@@ -13,6 +13,7 @@ import {PythonBasicComponent} from './pages/tutorial/python/python-basic/python-
 import {PropositionalLogicComponent} from './pages/tutorial/propositional-logic/propositional-logic.component';
 import {ProposionalLogicHomeComponent} from './pages/tutorial/propositional-logic/proposional-logic-home/proposional-logic-home.component';
 import {BiIconComponent} from './pages/bi-icon/bi-icon.component';
+import {JavaCreateThreadComponent} from './pages/tutorial/java/jav-thread/java-create-thread/java-create-thread.component';
 
 
 
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'java', component: JavaComponent,
     children: [
       {path: '', component: JavaHomeComponent, pathMatch: 'full'},
-      {path: 'java-thread', component: JavThreadComponent}
+      {path: 'java-thread', component: JavThreadComponent},
+      {path: 'java-create-thread', component: JavaCreateThreadComponent}
     ]
   },
   {path: 'python', component: PythonComponent,

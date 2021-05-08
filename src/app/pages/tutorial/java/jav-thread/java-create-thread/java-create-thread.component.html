@@ -1,0 +1,72 @@
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+    <section >
+      <div class="row">
+        <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+          <img src="assets/img/java/thread-lifecycle.png" class="img-fluid rounded-border" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <h3>How to create thread</h3>
+          <p class="fst-italic">
+            There are two ways to create a thread:
+          </p>
+          <ol>
+            <li>By extending Thread class</li>
+            <li>By implementing Runnable interface.</li>
+          </ol>
+          <h3>Thread class:</h3>
+          <p>Thread class provide constructors and methods to create and perform operations on a thread.Thread class extends Object class and implements Runnable interface.</p>
+          <h3>Commonly used Constructors of Thread class:</h3>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i>Thread()</li>
+            <li><i class="bi bi-arrow-right-short"></i>Thread(String name)</li>
+            <li><i class="bi bi-arrow-right-short"></i>Thread(Runnable r)</li>
+            <li><i class="bi bi-arrow-right-short"></i>Thread(Runnable r,String name)</li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
+        <h3>Commonly used methods of Thread class:</h3>
+        <ol>
+          <li><strong>public void run()</strong>: is used to perform action for a thread.</li>
+          <li><strong>public void start()</strong>: starts the execution of the thread.JVM calls the run() method on the thread.</li>
+          <li><strong>public void sleep(long miliseconds)</strong>: Causes the currently executing thread to sleep (temporarily cease execution) for the specified number of milliseconds.</li>
+          <li><strong>public void join()</strong>: waits for a thread to die.</li>
+          <li><strong>public void join(long miliseconds)</strong>: waits for a thread to die for the specified miliseconds.</li>
+          <li><strong>public int getPriority()</strong>: returns the priority of the thread.</li>
+          <li><strong>public int setPriority(int priority)</strong>: changes the priority of the thread.</li>
+          <li><strong>public String getName()</strong>: returns the name of the thread.</li>
+          <li><strong>public void setName(String name)</strong>: changes the name of the thread.</li>
+          <li><strong>public Thread currentThread()</strong>: returns the reference of currently executing thread.</li>
+          <li><strong>public int getId()</strong>: returns the id of the thread.</li>
+          <li><strong>public Thread.State getState()</strong>: returns the state of the thread.</li>
+          <li><strong>public boolean isAlive()</strong>: tests if the thread is alive.</li>
+          <li><strong>public void yield()</strong>: causes the currently executing thread object to temporarily pause and allow other threads to execute.</li>
+          <li><strong>public void suspend()</strong>: is used to suspend the thread(depricated).</li>
+          <li><strong>public void resume()</strong>: is used to resume the suspended thread(depricated).</li>
+          <li><strong>public void stop()</strong>: is used to stop the thread(depricated).</li>
+          <li><strong>public boolean isDaemon()</strong>: tests if the thread is a daemon thread.</li>
+          <li><strong>public void setDaemon(boolean b)</strong>: marks the thread as daemon or user thread.</li>
+          <li><strong>public void interrupt()</strong>: interrupts the thread.</li>
+          <li><strong>public boolean isInterrupted()</strong>: tests if the thread has been interrupted.</li>
+          <li><strong>public static boolean interrupted()</strong>: tests if the current thread has been interrupted.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
+        <h3>Runnable interface:</h3>
+        <p>The Runnable interface should be implemented by any class whose instances are intended to be executed by a thread. Runnable interface have only one method named run().</p>
+        <p><strong>1. public void run()</strong>: is used to perform action for a thread.</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -59,6 +59,7 @@ import { PythonBasicComponent } from './pages/tutorial/python/python-basic/pytho
 import { PropositionalLogicComponent } from './pages/tutorial/propositional-logic/propositional-logic.component';
 import { ProposionalLogicHomeComponent } from './pages/tutorial/propositional-logic/proposional-logic-home/proposional-logic-home.component';
 import { BiIconComponent } from './pages/bi-icon/bi-icon.component';
+import { JavaCreateThreadComponent } from './pages/tutorial/java/jav-thread/java-create-thread/java-create-thread.component';
 
 
 
@@ -95,7 +96,8 @@ import { BiIconComponent } from './pages/bi-icon/bi-icon.component';
     PythonBasicComponent,
     PropositionalLogicComponent,
     ProposionalLogicHomeComponent,
-    BiIconComponent
+    BiIconComponent,
+    JavaCreateThreadComponent
   ],
   imports: [
     BrowserModule,
