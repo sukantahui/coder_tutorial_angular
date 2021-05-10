@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./java-create-thread.component.scss']
 })
 export class JavaCreateThreadComponent implements OnInit {
+  panelOpenState: boolean;
 
   constructor() { }
 
