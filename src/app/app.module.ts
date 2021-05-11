@@ -60,6 +60,7 @@ import { PropositionalLogicComponent } from './pages/tutorial/propositional-logi
 import { BiIconComponent } from './pages/bi-icon/bi-icon.component';
 import { JavaCreateThreadComponent } from './pages/tutorial/java/jav-thread/java-create-thread/java-create-thread.component';
 import {ProposionalLogicHomeComponent} from './pages/tutorial/propositional-logic/proposional-logic-home/proposional-logic-home.component';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 
 
@@ -129,6 +130,7 @@ import {ProposionalLogicHomeComponent} from './pages/tutorial/propositional-logi
     TooltipModule
   ],
   providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorInterceptor, multi: true},
+              {provide: LocationStrategy, useClass: HashLocationStrategy},
               {provide: DateAdapter, useClass: DateFormat}, {provide: DEFAULT_CURRENCY_CODE, useValue: 'INR'} ],
 
   bootstrap: [AppComponent]
