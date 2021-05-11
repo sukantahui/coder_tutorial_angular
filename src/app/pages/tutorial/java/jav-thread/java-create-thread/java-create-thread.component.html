@@ -66,34 +66,35 @@
         <h3>Runnable interface:</h3>
         <p>The Runnable interface should be implemented by any class whose instances are intended to be executed by a thread. Runnable interface have only one method named run().</p>
         <p><strong>1. public void run()</strong>: is used to perform action for a thread.</p>
+        <mat-accordion>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" style="background-color: rgba(153,153,153,0.28); color: rgba(153,153,153,0.25)">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                {{panelOpenState ? 'Hide' : 'Show'}} Thread Demo Program using Runable Interface
+              </mat-panel-title>
+              <mat-panel-description>
+                Currently I am {{panelOpenState ? 'open' : 'closed'}}
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <iframe
+              src="assets/java/program/thread/ThreadRunableDemo.html"
+              frameborder="0"
+              class="responsive-iframe" style="border: 1px solid rgba(211,216,219,0.58); width: 50vw; height: 40vh">
+            </iframe>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <h3>Starting a thread:</h3>
+        <ul>start() method of Thread class is used to start a newly created thread. It performs following tasks:
+          <li>A new thread starts(with new callstack).</li>
+          <li>The thread moves from New state to the Runnable state.</li>
+          <li>When the thread gets a chance to execute, its target run() method will run.</li>
+        </ul>
       </div>
     </div>
   </div>
 
-<!--  <div class="container" data-aos="fade-up">-->
-<!--    <div class="row">-->
-<!--      <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">-->
-<!--        <h3>Runnable interface:</h3>-->
-<!--        <mat-accordion>-->
-<!--          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" style="background-color: #999999; color: #999999">-->
-<!--            <mat-expansion-panel-header>-->
-<!--              <mat-panel-title>-->
-<!--                {{panelOpenState ? 'Hide' : 'Show'}} Thread Demo Program-->
-<!--              </mat-panel-title>-->
-<!--              <mat-panel-description>-->
-<!--                Currently I am {{panelOpenState ? 'open' : 'closed'}}-->
-<!--              </mat-panel-description>-->
-<!--            </mat-expansion-panel-header>-->
-<!--            <iframe-->
-<!--              src="assets/java/program/thread/ThreadDemo.txt"-->
-<!--              frameborder="0"-->
-<!--              class="responsive-iframe" style="border: 3px solid #070d21; width: 50vw; height: 25vh">-->
-<!--            </iframe>-->
-<!--          </mat-expansion-panel>-->
-<!--        </mat-accordion>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
+
+
 <!--  Thread scheduler in java-->
   <div class="container" data-aos="fade-up">
     <div class="row">
