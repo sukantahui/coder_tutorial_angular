@@ -69,6 +69,7 @@ import {ProposionalLogicHomeComponent} from './pages/tutorial/propositional-logi
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -125,7 +126,7 @@ import {ProposionalLogicHomeComponent} from './pages/tutorial/propositional-logi
       }
     }),
     NgxMousetrapModule.forRoot(),
-    TooltipModule,
+    TooltipModule
   ],
   providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorInterceptor, multi: true},
               {provide: DateAdapter, useClass: DateFormat}, {provide: DEFAULT_CURRENCY_CODE, useValue: 'INR'} ],
