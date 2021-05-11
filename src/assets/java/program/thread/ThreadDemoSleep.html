@@ -1,0 +1,37 @@
+
+<style>
+  pre{
+    background-image: linear-gradient(to right, #c4bdbd, rgba(153, 153, 150, 0.31));
+    font-size: 20px;
+    padding: 10px;
+    color: #090000;
+    border-radius: 5px;
+  }
+</style>
+  <pre>
+    package threaddemo;
+
+    public class ThreadDemo extends Thread{
+
+    @Override
+    public void run() {
+        for (int i = 1; i < 5; i++) {
+            try {
+                    Thread.sleep(1500);
+                }catch (InterruptedException e){
+                    System.out.println(e);
+                }
+                System.out.println(i);
+            }
+        }
+
+        public static void main(String[] args){
+            ThreadDemo t1 = new ThreadDemo();
+            ThreadDemo t2 = new ThreadDemo();
+            t1.start();
+            t2.start();
+        }
+    }
+
+  </pre>
+

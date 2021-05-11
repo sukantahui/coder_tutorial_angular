@@ -60,12 +60,55 @@
       </div>
     </div>
   </div>
+<!--  Creating Java Thread using runable interface-->
   <div class="container" data-aos="fade-up">
     <div class="row">
       <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
         <h3>Runnable interface:</h3>
         <p>The Runnable interface should be implemented by any class whose instances are intended to be executed by a thread. Runnable interface have only one method named run().</p>
         <p><strong>1. public void run()</strong>: is used to perform action for a thread.</p>
+        <h3>Starting a thread:</h3>
+        <ul>start() method of Thread class is used to start a newly created thread. It performs following tasks:
+          <li>A new thread starts(with new callstack).</li>
+          <li>The thread moves from New state to the Runnable state.</li>
+          <li>When the thread gets a chance to execute, its target run() method will run.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
+        <h3>1. Java Thread Example by extending Thread class</h3>
+        <mat-accordion>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" style="background-color: rgba(153,153,153,0.28); color: rgba(153,153,153,0.25)">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                {{panelOpenState ? 'Hide' : 'Show'}} Thread Demo Program extending Thread class
+              </mat-panel-title>
+              <mat-panel-description>
+                Currently I am {{panelOpenState ? 'open' : 'closed'}}
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <iframe
+              src="assets/java/program/thread/ThreadDemo.html"
+              frameborder="0"
+              class="responsive-iframe" style="border: 1px solid rgba(211,216,219,0.58); width: 50vw; height: 40vh">
+            </iframe>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
+        <h3>2. Java Thread Example by implementing Runnable interface</h3>
         <mat-accordion>
           <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" style="background-color: rgba(153,153,153,0.28); color: rgba(153,153,153,0.25)">
             <mat-expansion-panel-header>
@@ -83,19 +126,12 @@
             </iframe>
           </mat-expansion-panel>
         </mat-accordion>
-        <h3>Starting a thread:</h3>
-        <ul>start() method of Thread class is used to start a newly created thread. It performs following tasks:
-          <li>A new thread starts(with new callstack).</li>
-          <li>The thread moves from New state to the Runnable state.</li>
-          <li>When the thread gets a chance to execute, its target run() method will run.</li>
-        </ul>
       </div>
     </div>
   </div>
 
-
-
-<!--  Thread scheduler in java-->
+<hr>
+  <!--  Thread scheduler in java-->
   <div class="container" data-aos="fade-up">
     <div class="row">
       <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
@@ -104,8 +140,72 @@
           There is no guarantee that which runnable thread will be chosen to run by the thread scheduler.
           Only one thread at a time can run in a single process. The thread scheduler mainly uses preemptive or time slicing scheduling to schedule the threads.</p>
         <popover-content #popoverCustomer title="JVM Stands for" placement="right" [animation]="true" [closeOnClickOutside]="true">
-            <p>Java Vartual Machine</p>
+          <p>Java Vartual Machine</p>
         </popover-content>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
+        <h3>Difference between preemptive scheduling and time slicing:</h3>
+        <p>Under preemptive scheduling, the highest priority task executes until it enters the waiting or dead states or a higher priority task comes into existence. Under time slicing, a task executes for a predefined slice of time and then reenters the pool of ready tasks. The scheduler then determines which task should execute next, based on priority and other factors. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
+        <h3>Sleep method in java:</h3>
+        <p>The sleep() method of Thread class is used to sleep a thread for the specified amount of time.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
+        <h3>The Thread class provides two methods for sleeping a thread:</h3>
+        <ul>
+          <li>public static void sleep(long miliseconds)throws InterruptedException</li>
+          <li>public static void sleep(long miliseconds, int nanos)throws InterruptedException</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-left" data-aos-delay="100">
+        <h3>Thread Demo with sleep() function</h3>
+        <mat-accordion>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" style="background-color: rgba(153,153,153,0.28); color: rgba(153,153,153,0.25)">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                {{panelOpenState ? 'Hide' : 'Show'}} Thread Demo with sleep() function
+              </mat-panel-title>
+              <mat-panel-description>
+                Currently I am {{panelOpenState ? 'open' : 'closed'}}
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <iframe
+              src="assets/java/program/thread/ThreadDemoSleep.html"
+              frameborder="0"
+              class="responsive-iframe" style="border: 1px solid rgba(211,216,219,0.58); width: 50vw; height: 40vh">
+            </iframe>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <p>Calling a start() on the thread when it's already executing run() method -:
+          When a thread is already running and executing its functions inside the run() method and amidst its execution, a call to the start() method on the same thread, leads to an <a [routerLink]="" [popover]="IllegalThreadStateException">IllegalThreadStateException</a>.
+        </p>
+        <popover-content #IllegalThreadStateException title="IllegalThreadStateException" placement="right" [animation]="true" [closeOnClickOutside]="true">
+          <p>Calling a start() on the thread when it's already executing run() method -:
+            When a thread is already running and executing its functions inside the run() method and amidst its execution, a call to the start() method on the same thread, leads to an IllegalThreadStateException.
+          </p>
+        </popover-content>
+
       </div>
     </div>
   </div>
